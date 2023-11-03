@@ -138,7 +138,7 @@ func merge(keys *[]string) {
 	}
 
 	raw := strings.Join(newlines, "")
-	os.WriteFile(".env", []byte(raw), fs.ModePerm)
+	os.WriteFile(path+"/.genv", []byte(raw), fs.ModePerm)
 }
 
 func main() {
