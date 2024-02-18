@@ -25,9 +25,9 @@ var patterns = map[string]string{
 
 func option() {
 	ppath := flag.String("p", "", "Path")
-	plang := flag.String("l", "", "Language")
+	plang := flag.String("l", "", "Language: go/js/jsx/ts/tsx")
 	pmerge := flag.String("m", ".env", "Merge .env file target")
-	pignore := flag.String("i", "", "Ignore names")
+	pignore := flag.String("i", "", "Ignore names (seperate with comma)")
 	flag.Parse()
 
 	path = *ppath
