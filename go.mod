@@ -1,3 +1,3 @@
-module github.com/sushistudio/sdk-env-file-generator
+module github.com/sushistudio/envfinder
 
 go 1.21.0
